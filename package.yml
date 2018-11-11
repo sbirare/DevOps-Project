@@ -7,6 +7,8 @@
       apt: name=mariadb-server state=latest
     - name: Install tree
       apt: name=tree state=latest
+    - name: Install initscripts
+      apt: name=init state=latest
     - name: Upgrade
       apt: upgrade=yes
     - name: Install HTTPD on Ubuntu
