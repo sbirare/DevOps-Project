@@ -13,9 +13,8 @@
       apt: upgrade=yes
     - name: Install HTTPD on Ubuntu
       apt: name=apache2 update_cache=yes state=latest
-      notify:
-        - restart apache2
-
-  handlers:
-    - name: restart apache2
-      service: name=apache2 state=restarted
+    - name: Create a data container
+      docker_container:
+        name: test
+        image: "ubuntu:latest"
+        state: present
