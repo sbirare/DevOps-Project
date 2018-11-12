@@ -48,8 +48,11 @@ UbuntuDockerGuest-1
 [Routers]
 R1
 R2
+<<<<<<< HEAD
 
 [Switch]
 SW1
 SW2
 SW3
+=======
+>>>>>>> b7106f9cf17ebf47a8c2a67316a14408a683d5c0
